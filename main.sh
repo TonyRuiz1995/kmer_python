@@ -12,6 +12,6 @@ python3 kmer.py $1
 end=$(date +%s%N | cut -b1-13)
 #echo "$start"
 #echo "$end"
-total=$(echo "$end - $start"|bc)
-echo $total  >> dat1.txt
-
+total=$(($end - $start))
+echo $total >> data.txt
+echo $total >> data_times.txt
