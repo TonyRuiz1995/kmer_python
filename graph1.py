@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 #using hadoop mapreduce
-df = pd.read_csv('/home/tony/WMU/kmer_python/hadoop_data.txt')
+df = pd.read_csv('/home/tony/WMU/kmer_python/kmer_python/hadoop_data.txt')
 print(df)
 
 df1 = pd.DataFrame()
@@ -32,7 +32,7 @@ print(df1)
 g = sns.factorplot(x="Sequence_Size", y="time_elapsed", hue='k_size', data=df1)
 plt.show()
 
-df = pd.read_csv('/home/tony/WMU/kmer_python/kmer_data.txt')
+df = pd.read_csv('/home/tony/WMU/kmer_python/kmer_python/kmer_data.txt')
 print(df)
 
 df1 = pd.DataFrame()
