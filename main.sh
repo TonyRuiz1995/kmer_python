@@ -13,5 +13,5 @@ end=$(date +%s%N | cut -b1-13)
 #echo "$start"
 #echo "$end"
 total=$(($end - $start))
-echo $total >> data.txt
+echo $total >> dat1.txt
 echo $total >> data_times.txt
